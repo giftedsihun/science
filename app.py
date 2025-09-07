@@ -2,7 +2,7 @@ import streamlit as st
 import openai
 
 # OpenAI API 키
-openai.api_key = "YOUR_API_KEY"
+openai.api_key = st.secrets["YOUR_API_KEY"]
 
 st.title("📘 AI 출제기 (교재 기반)")
 
